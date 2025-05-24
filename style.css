@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Left container */
+#leftcontainer {
+    height: 100%;
+    width: 20%;
+    background-color: rgb(45, 29, 24);
+    color: white;
+    position: fixed;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+    #leftcontainer > div {
+        padding: 2em 2em;
+    }
+
+    #navbarimage {
+        width: 100%;
+        height: auto;
+
+    }
+
+/* Right Container */
+#maincontainer {
+    margin-left: 20%;
+    padding: 2em;
+    background-color: rgb(117, 115, 50);
+}
+header {
+    text-align: center;
+}
+
+section {
+    margin-top: 2em;
+}
+
+/* General flexboxes */
+.vertical-centre-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
