@@ -3,9 +3,7 @@
 
 <head>
     <title>My Portfolio</title>
-    <style>
-
-    </style>
+    <script src="script.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -108,29 +106,30 @@
 
                 <!-- Form submission -->
                 <div class="contactdetails">
-                    <form>
+                    <form name="form" id="form">
                         <div class="contactdetailssmall">
                             <div class="contactdetailsevensmaller">
                                 <label for="name">Your Name</label>
-                                <input type="text" name="name">
+                                <input type="text" name="name" id="user">
                             </div>
                             <div class="contactdetailsevensmaller">
                                 <label for="email">Your Email</label>
-                                <input type="email" name="email">
+                                <input type="email" name="email" id="email">
                             </div>
                         </div>
                         <div class="formelement">
                             <label for="subject">Subject</label>
                             <br>                
-                            <input type="text" name="subject">
+                            <input type="text" name="subject" id="subject">
                         </div>
                         <div class="formelement message">
                             <label for="message">Message</label>
                             <br>
-                            <textarea type="text" name="message" rows="15"></textarea>
+                            <textarea type="text" name="message" rows="15" id="message"></textarea>
                         </div>
                         <button type="submit" class="formelement">Send</button>
                     </form>
+                    <p id = "response"></p>
                 </div>
             </div>
         </section>
