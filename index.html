@@ -16,18 +16,16 @@
         <div class="vertical-centre-flexbox">
             <!-- Logo -->
             <div>
-                <img src="images/profilepicture.png" id = "navbarimage">
+                <img src="images/profilepicture.png" id="navbarimage">
             </div>
 
             <!-- Navigation port -->
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills and Experience</li>
-                    <li>Resume</li>
-                    <li>Contact</li>
-                </ul>
+            <div id="navbar">
+                <a href="#home">🏠 Home</a>
+                <a href="#about">💡 About</a>
+                <a href="#skills">🛠️ Skills</a>
+                <a href="#resume">📁 Resume</a>
+                <a href="#contact">📱 Contact</a>
             </div>
         </div>
     </div>
@@ -35,40 +33,107 @@
     <!-- Main container -->
     <div id="maincontainer">
         <header>
-            <h1>Hi, I'm Garfield the Cat
-            </h1>
-            <p>Software Engineering Student</p>
+            <div class="head">
+                <h1>Hi, I'm Garfield the Cat
+                </h1>
+                <p>Software Engineering Student</p>
+            </div>
+            <div id="home" class="head"></div>
         </header>
-
-        <section>
+        <section id="about">
             <h2>About Me</h2>
-            <p>I am Garfield. I am passionate about software development and learning new technologies. This is my personal portfolio site.
+            <p>I am Garfield. I am passionate about software development and learning new technologies. This is my
+                personal portfolio site.
             </p>
         </section>
 
-        <section>
+        <section id="skills">
             <h2>Skills and Intersts</h2>
-            <p>Here is a quick rundown of my skills.</p>
+            <p>Here are a few of my key skills.</p>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
             </ul>
-            <img src="images/profilepicture.png"> It's Garfield
         </section>
 
-        <section>
+        <section id="resume">
             <h2>Projects</h2>
-            <ul>
-                <li><strong>Project 1:</strong> Description of project 1</li>
-                <li><strong>Project 2:</strong> Description of project 2</li>
-            </ul>
+            <!-- card gallery -->
+            <div class="cardgallery">
+                <a href="#home" class="card">
+                    Project 1
+                </a>
+
+                <a href="#home" class="card">
+                    Project 2
+                </a>
+            </div>
         </section>
 
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
-            <p>GitHub: <a href="https://github.com/jwangr" target="_blank">jwangr</a></p>
-        </section>        
+            <p>Reach out and I'll get back to you in a few days. </p>
+            <div id="contactcontainer">
+                <div class="contactdetails">
+                    <div class="contactdetailssmall">
+                        <div class="contacticon">📩</div>
+                        <div class="contactdetailsevensmaller">
+                            <h3>Email Us</h3>
+                            <p>garfield@cartoons.com</p>
+                        </div>
+                    </div>
+                    <div class="contactdetailssmall">
+                        <div class="contacticon">📞</div>
+                        <div class="contactdetailsevensmaller">
+                            <h3>Call Us</h3>
+                            <p>+1 0000 00000 00</p>
+                        </div>
+                    </div>
+                    <div class="contactdetailssmall">
+                        <div class="contacticon">📍</div>
+                        <div class="contactdetailsevensmaller">
+                            <h3>Address</h3>
+                            <p>357 Shady Grove Lane</p>
+                        </div>
+                    </div>
+                    <div class="contactdetailssmall">
+                        <div class="contacticon">🖥️</div>
+                        <div class="contactdetailsevensmaller">
+                            <h3>Github</h3>
+                            <a href="https://github.com/jwangr" target="_blank">jwangr</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form submission -->
+                <div class="contactdetails">
+                    <form>
+                        <div class="contactdetailssmall">
+                            <div class="contactdetailsevensmaller">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name">
+                            </div>
+                            <div class="contactdetailsevensmaller">
+                                <label for="email">Your Email</label>
+                                <input type="email" name="email">
+                            </div>
+                        </div>
+                        <div class="formelement">
+                            <label for="subject">Subject</label>
+                            <br>                
+                            <input type="text" name="subject">
+                        </div>
+                        <div class="formelement message">
+                            <label for="message">Message</label>
+                            <br>
+                            <textarea type="text" name="message" rows="15"></textarea>
+                        </div>
+                        <button type="submit" class="formelement">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
 
 </body>
